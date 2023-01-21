@@ -17,3 +17,17 @@ volume = round(volume, 2)
 
 # Print the results for the user to see.
 print(f"The approximate volume is {volume} liters")
+
+# Import the datetime module
+from datetime import datetime
+
+my_date = datetime.today()
+
+date = my_date.date()
+print(date)
+
+#open a text file named volumes.txt
+with open("volumes.txt", "at") as my_files:
+
+    #Append the needed information for the user
+    print(f"{date}, {width}, {asp_ratio}, {diameter}, {volume}", file=my_files)

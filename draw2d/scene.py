@@ -12,7 +12,7 @@ def main():
 
     # Call the start_drawing function in the draw2d.py
     # library which will open a window and create a canvas.
-    canvas = start_drawing("Scene", scene_width, scene_height)
+    canvas = start_drawing("scene", scene_width, scene_height)
 
     # Call your drawing functions such
     # as draw_sky and draw_ground here.
@@ -24,13 +24,23 @@ def main():
     # in the draw2d.py library.
     finish_drawing(canvas)
 
-
 # Define your functions such as
 # draw_sky and draw_ground here.
 def draw_sky(canvas, scene_width, scene_height):
     """Draw the sky and all the objects in the sky."""
     draw_rectangle(canvas, 0, scene_height / 3,
         scene_width, scene_height, width=0, fill="sky blue")
+
+    draw_oval(canvas, 130, 460, 190, 390, outline="white", fill="white")
+    draw_oval(canvas, 220, 440, 150, 480, outline="white", fill="white")
+    draw_oval(canvas, 180, 420, 100, 470, outline="white", fill="white")
+    draw_oval(canvas, 250, 400, 170, 470, outline="white", fill="white")
+
+    draw_oval(canvas, 700, 490, 650, 420, outline="white", fill="white")
+    draw_oval(canvas, 750, 500, 620, 460, outline="white", fill="white")
+    draw_oval(canvas, 800, 1590, 650, 420, outline="white", fill="white")
+
+    draw_oval(canvas, 500, 300, 650, 400, outline="yellow", fill="yellow")
 
 def draw_ground(canvas, scene_width, scene_height):
     """Draw the ground and all the objects on the ground."""
@@ -44,6 +54,20 @@ def draw_ground(canvas, scene_width, scene_height):
     draw_pine_tree(canvas, tree_center_x,
             tree_bottom, tree_height)
     
+    # Draw another pine tree.
+    tree_center_x = 500
+    tree_bottom = 70
+    tree_height = 250
+    draw_pine_tree(canvas, tree_center_x,
+            tree_bottom, tree_height)
+
+    # Draw another pine tree.
+    tree_center_x = 400
+    tree_bottom = 100
+    tree_height = 200
+    draw_pine_tree(canvas, tree_center_x,
+            tree_bottom, tree_height)
+
     # Draw another pine tree.
     tree_center_x = 700
     tree_bottom = 70
@@ -85,8 +109,8 @@ def draw_pine_tree(canvas, center_x, bottom, height):
             skirt_right, trunk_top,
             skirt_left, trunk_top,
             outline="gray20", width=1, fill="dark green")
-
-
+    
+    
 
 # Call the main function so that
 # this program will start executing.

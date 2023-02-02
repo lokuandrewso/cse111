@@ -4,16 +4,17 @@ body {
 
   nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 25px;
   }
 
   a {
     color: white;
-    margin: 40px;
+    margin: 25px;
   }
 
   h1 {
     color: steelblue;
+    margin: 50px 0;
   }
   img {
     width: 800px;
@@ -28,6 +29,10 @@ body {
     color: white;
   }
 
+  footer {
+    padding: 25px;
+  }
+
   #active {
     background-color: white;
     color: steelblue;
@@ -36,4 +41,5 @@ body {
   .main-para {
   font-size: 1.5em;
   line-height: 1.5em;
+  margin: 50px 0;
   }

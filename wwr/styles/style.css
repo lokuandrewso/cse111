@@ -28,7 +28,8 @@ h2 {margin: 0;}
 #content {margin: 0 auto;
 }
 
-.sis {margin-top: 100px;
+.card-img {margin-top: 100px;
+    width: 100%;
     border: 10px solid #d9c2a3;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;}
@@ -67,11 +68,12 @@ nav a {text-align: center;
     grid-row: 1/3;
     z-index: -1;
 }
-.home-grid {display: grid;
+main {display: grid;
     grid-template-columns: repeat(10, fr);
+    width: 100%;
 }
 
-.sis:hover {
+.card-img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
@@ -174,14 +176,14 @@ main section img {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .brothers-sisters-card, .mountain-tip-card, .waterfall-card { 
         margin: 50px auto;
         width: 60%;
     }
     #background {
         display: none;
     }
-    .mountains, .msg {
+    .waterfall, .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
@@ -190,4 +192,4 @@ main section img {
         margin-top: 25px;
     }
 }
-            
+    

@@ -6,6 +6,14 @@
   --body-font: Roboto, Helvetica, sans-serif;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
 
 body {
     max-width: 1600px;
@@ -29,10 +37,40 @@ nav a {text-align: center;
     padding: 35px;
 }
 
-#logo_link {padding-top: 5px;}
+#logo_link {padding-top: 5px;
+    justify-self: center;
+    align-self: center;}
+
+#hero-msg {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 100px;
+    }
 
 #hero-msg h1, #hero-msg h4 {text-align: center;
+}       
+
+#hero {display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
 }
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+.sisters { grid-column: 2/4;
+    grid-row: 2/3;}
+.forest-set { grid-column: 5/7;
+    grid-row: 2/3;}
+.Nature {grid-column: 8/10;
+    grid-row: 2/3;}
+#background{grid-column: 1/11;
+    grid-row: 4/9;}
+.waterfall {grid-column: 2/7;
+    grid-row: 5/8;}
+.msg {grid-column: 6/10;
+    grid-row: 6/7;}
 
 .button-box {text-align: center;
 }
@@ -52,6 +90,14 @@ body {background-color: beige;
     font-size: 2em;
     margin-top: 10px;
 }
+.home-grid {display: grid;
+    grid-template-columns: repeat(10, fr);
+}
+
+.waterfall, .memories {
+    width: 100%;
+}
+        
 
 header {background-color: #e9edc9;}
 nav a:hover {background-color: #e7c6ff;}
@@ -75,6 +121,9 @@ nav a:hover {background-color: #e7c6ff;}
 footer {background-color: #e9edc9;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer a {text-decoration: none;}
 footer p {font-size: 1.2em;}

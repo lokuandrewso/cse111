@@ -105,7 +105,35 @@ body {background-color: beige;
     font-size: 2em;
     margin-top: 10px;
 }
-        
+ .ysa-grid {float: left;}  
+.ysa-past {float: left;}
+.past-img {margin-top: 50px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+   float: left;
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   padding: 15px 30px;
+   border-radius: 20px;}
+
+.upcoming-img {margin-top: 50px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+   float: left;
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   padding: 15px 30px;
+   border-radius: 20px}
+
+h3 {margin-top: 50;
+    font-size: 34px;
+   padding: 15px 30px;
+   border-radius: 10px;
+justify-content: left;}
 
 header {background-color: #e9edc9;}
 nav a:hover {background-color: #e7c6ff;}
@@ -151,6 +179,7 @@ main section img {
 
 .brothers-sisters-card, .mountain-tip-card, .waterfall-card {margin: 200px 0;}
 
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -191,5 +220,5 @@ main section img {
     footer {
         margin-top: 25px;
     }
-}
+  }
     

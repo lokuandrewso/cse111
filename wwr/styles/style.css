@@ -69,7 +69,7 @@ nav a {text-align: center;
     z-index: -1;
 }
 main {display: grid;
-    grid-template-columns: repeat(10, fr);
+    grid-template-columns: repeat(10, px);
     width: 100%;
 }
 
@@ -112,9 +112,6 @@ body {background-color: beige;
     display: block;
     margin: 0 auto;
    float: left;
-   text-decoration: none;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 18px;
    padding: 15px 30px;
    border-radius: 20px;}
 
@@ -123,13 +120,11 @@ body {background-color: beige;
     display: block;
     margin: 0 auto;
    float: left;
-   text-decoration: none;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 18px;
    padding: 15px 30px;
-   border-radius: 20px}
+   border-radius: 20px;
+    margin-bottom: 50px;}
 
-h3 {margin-top: 50;
+h3 {margin-top: 50px;
     font-size: 34px;
    padding: 15px 30px;
    border-radius: 10px;

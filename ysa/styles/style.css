@@ -2,7 +2,7 @@
 
 :root {
   /* change the values below to your chosen font(s) */
-  --heading-font: 'Rock Salt', 'Bradley Hand', sans-serif;
+  --heading-font: 'Sofia Sans';
   --body-font: Roboto, Helvetica, sans-serif;
   --paragraph-font: Roboto, Helvetica, sans-serif;
 }
@@ -57,14 +57,13 @@ nav a {text-align: center;
     z-index: -1;
 }
 main {display: grid;
-    grid-template-columns: repeat(10, px);
     width: 100%;
 }
 
 main section {text-align: center;
 }
             
-body {background-color: beige;
+body {background-color: #f5f5dc;
 }
 
 .home-title {

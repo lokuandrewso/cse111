@@ -74,7 +74,7 @@ def read_dictionary(filename, key_column_index):
             item_no = row[key_column_index]
             dictionary[item_no] = row
 
-        return dictionary
+    return dictionary
     
 def read_requests(filename):
     #store data

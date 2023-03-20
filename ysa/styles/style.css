@@ -73,14 +73,14 @@ body {background-color: #f5f5dc;
 }
 .button-box {text-align: center;
 }
-.contact {background-color: aliceblue;
+.contact, button {background-color: #ffafcc;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;}
-    .contact:hover {background-color: aliceblue;}
+    .contact:hover, button:hover {background-color: aliceblue;}
 
     form {
         /* Center the form on the page */
